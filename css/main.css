@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+body {
+    background-color: #F3F5FC;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+.contenedor {
+    display: flex;
+    min-height: 100vh;
+}
+
+.col-izq {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+    width: 70%;
+}
+
+.col-der {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 14px 32px -7px rgba(0, 0, 0, 0.15);
+}
+
+.col-izq img.logo {
+    width: 7.5rem;
+    height: 3rem;
+}
+
+.col-izq .contenido {
+    margin-left: 12.5rem;
+    margin-top: 3.7rem;
+}
+
+.col-izq textarea {
+    width: 82%;
+    max-height: 100%;
+    resize: none;
+    border: none;
+    background-color: #F3F5FC;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #0A3871;
+    margin-bottom: 9rem;
+}
+
+.col-izq textarea::placeholder {
+    color: #0A3871;
+}
+
+.col-izq textarea:focus {
+    outline: none;
+}
+
+.col-izq .info {
+    display: flex;
+    align-items: center;
+    margin: 1.2rem 0 0 0;
+}
+  
+.col-izq .info img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.col-izq .info p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.col-izq .botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.col-izq .botones button {
+    width: 30%;
+    padding: 1.5rem;
+    border: 1px solid #0A3871;
+    border-radius: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.col-izq .botones button:first-of-type {
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+.col-izq .botones button:last-of-type {
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+.col-der img {
+    width: 21rem;
+    height: 19rem;
+}
+
+.col-der p:first-of-type {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: #343A40;
+    margin: 1.3rem 3.1rem;
+}
+
+.col-der p:last-of-type {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #495057;
+    margin: 0 1.9rem;
+}
+.resultado {
+    height: 100%;
+    margin: 2rem 0;
+}
+
+.col-der textarea {
+    width: 90%;
+    max-height: 100%;
+    resize: none;
+    border: none;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: #495057;
+    margin-bottom: 11rem;
+}
+
+.col-der textarea:focus {
+    outline: none;
+}
+  
+.col-der button {
+    width: 85%;
+    padding: 1.5rem;
+    border: 1px solid #0A3871;
+    border-radius: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 13.5rem 0 0 0;
+}
+
+.col-der button {
+    background: #FFFFFF;
+    color: #0A3871;
+}
+
+.d-none {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    /* Aquí van los estilos específicos para dispositivos con un ancho mínimo de 1024px y máximo de 1440px */
+    .col-izq {
+        width: 63%;
+    }
+
+    .col-izq .contenido {
+        margin-left: 4.5rem;
+    }
+
+    .col-izq textarea {
+        width: 100%;
+        margin-top: 1.9rem;
+        font-size: 1.8rem;
+    }
+
+    .col-izq .info {
+        margin: 4.4rem 0 0 0;
+    }
+
+    .col-izq .botones button {
+        width: 47%;
+        padding: 1rem;
+    }
+    
+    .col-der {
+        width: 37%;
+    }
+
+    .col-der img {
+        width: 16rem;
+        height: 14rem;
+    }
+    
+    .col-der p:first-of-type {
+        font-size: 1.3rem;
+    }
+    
+    .col-der p:last-of-type {
+        font-size: 0.95rem;
+    }
+
+    .resultado {
+        margin: 2rem 0;
+    }
+    
+    .col-der textarea {
+        font-size: 1.5rem;
+    }
+      
+    .col-der button {
+        width: 70%;
+        padding: 1rem;
+        margin-top: 16.2rem;
+    }
+}
+
+@media only screen and (max-width: 575px),
+only screen and (min-width: 576px) and (max-width: 1023px) {
+    /* Aquí van los estilos específicos para dispositivos con un ancho máximo de 575px */
+    /* Aquí van los estilos específicos para dispositivos con un ancho mínimo de 576px y máximo de 1023px */
+    .contenedor {
+        flex-direction: column;
+    }
+    
+    .col-izq {
+        margin: 2.5rem 0;
+        width: 100%;
+    }
+    
+    .col-izq .contenido {
+        margin: 6.7rem 2.4rem 0 2.4rem;
+    }
+    
+    .col-izq textarea {
+        width: 100%;
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+    
+    .col-izq .info {
+        margin: 1.5rem 0 0 0;
+    }
+    
+    .col-izq .info p {
+        font-size: 0.8rem;
+    }
+    
+    .col-izq .botones button {
+        width: 50%;
+        padding: 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .col-der {
+        margin: 1rem 2rem 4rem 2rem;
+        width: auto;
+    }
+
+    .col-der img {
+        display: none;
+    }
+    
+    .col-der p:first-of-type {
+        font-size: 1.2rem;
+        margin: 2.5rem 0 0.5rem 0;
+    }
+    
+    .col-der p:last-of-type {
+        font-size: 0.9rem;
+        margin: 0.5rem 0 2rem 0;
+    }
+    
+    .resultado {
+        height: 100%;
+        width: 100%;
+        margin: 2rem 0;
+    }
+    
+    .col-der textarea {
+        width: 90%;
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+    }
+      
+    .col-der button {
+        width: 90%;
+        padding: 1rem;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    /* Aquí van los estilos específicos para dispositivos con un ancho máximo de 575px */
+    .col-izq .botones {
+        flex-direction: column;
+    }
+    
+    .col-izq .botones button {
+        width: 100%;
+    }
+}
